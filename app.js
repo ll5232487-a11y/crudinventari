@@ -1,6 +1,6 @@
-document.getElementById("act").style.display = "none";
+document.getElementById("act").style.display = "none"; //ocultar nboton actualizar
 var myArrayArtculo = [];
-objart={
+objart={ //se define objeto articulo
     cod:null,
     nom:null,
     und:null,
@@ -9,7 +9,7 @@ objart={
     precioVta:null
 }
 var posAct;
-comprobarLocalStorage();
+comprobarLocalStorage(); //verificar su hay item en la memoria local
 function guardar(){
     objart.cod= document.getElementById("cod").value;
     objart.nom= document.getElementById("nom").value;
